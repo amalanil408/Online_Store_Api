@@ -28,6 +28,16 @@ const productSchema = mongoose.Schema({
         required : true
     },
 
+    vendorId : {
+        type : String,
+        required : true
+    }, 
+
+    fullName : {
+        type : String,
+        required : true
+    },
+
     subCategory : {
         type : String,
         required : true
@@ -49,6 +59,16 @@ const productSchema = mongoose.Schema({
         type : Boolean,
         default : false
     },
+
+    averageRating : {
+        type : Number,
+        default : 0,
+    },
+
+    totalRating : {
+        type : Number,
+        default : 0
+    }
 });
 
 

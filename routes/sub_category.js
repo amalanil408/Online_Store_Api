@@ -21,7 +21,7 @@ subCategoryRouter.get('/api/subcategories',async (req,res) => {
         return res.status(200).json(subCategories)
     } catch (e) {
         res.status(500).json({error : e.message});
-    }
+    }z
 })
 
 
